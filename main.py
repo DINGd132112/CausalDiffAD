@@ -1,27 +1,3 @@
-"""
-main.py
-=======
-顶层入口。支持多种实验模式。
-
-用法示例:
-    # 单数据集训练 + 评估
-    python main.py --mode train --dataset SWaT
-
-    # 所有数据集依次训练
-    python main.py --mode train --dataset all
-
-    # 消融实验
-    python main.py --mode ablation --dataset SWaT
-
-    # 鲁棒性实验
-    python main.py --mode robustness --dataset SWaT
-
-    # 快速实验
-    python main.py --mode fast --dataset SWaT
-
-    # Optuna 超参数搜索
-    python main.py --mode optuna --dataset SWaT --trials 20
-"""
 import os
 import argparse
 from config import get_config
